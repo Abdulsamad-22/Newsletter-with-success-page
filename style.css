@@ -14,6 +14,13 @@ body{
         display: flex;
         align-items: start;
         justify-content: center;
+        margin: 0;
+    }
+}
+
+@media (hover:hover){
+    .dismiss-button:hover, .submit-button:hover{
+        background-color: hsl(4, 100%, 67%);
     }
 }
 
@@ -33,8 +40,19 @@ body{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: start;
-        max-width: 375px;
+        max-width: 100%;
         min-height: 740px;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .input-page{
+        justify-content: start;
+        min-width: 100%;
+        height: 915px;
         border-radius: 0;
         padding: 0;
         margin: 0;
@@ -44,37 +62,24 @@ body{
 @media (min-width: 376px) and (max-width: 414px) {
     .input-page{
         justify-content: start;
-        max-width: 414px;
-        min-height: 915px;
+        max-width: 100%;
+        height: 915px;
         border-radius: 0;
         padding: 0;
         margin: 0;
     }
 }
 
-@media (min-width: 415px) {
+@media (min-width: 415px) and (max-width: 728px) {
     .input-page{
         justify-content: start;
-        min-width: 100%;
-        min-height: 932px;
+        width: 100%;
+        height: 932px;
         border-radius: 0;
         padding: 0;
         margin: 0;
     }
 }
-
-/*@media (min-width: 470px) {
-    .input-page{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        min-width: 400px;
-        border-radius: 0;
-        padding: 0;
-        margin: 0;
-    }
-}*/
 
 @media (max-width: 37.5rem) {
     .text-section{
@@ -86,7 +91,7 @@ body{
 
 @media (min-width: 376px) and (max-width: 414px) {
     .text-section{
-        max-width: 78%;
+        max-width: 80%;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -219,14 +224,10 @@ body{
     cursor: pointer;
 }
 
-.submit-button:hover{
-    background-color: hsl(4, 100%, 67%);
-}
-
 @media (max-width: 37.5rem) {
     .submit-button{
         min-width: 102%;
-        padding: 0.875rem 1.125rem;
+        padding: 1rem 1.125rem;
     }
 }
 
@@ -238,8 +239,6 @@ body{
 @media (max-width: 37.5rem) {
     .header-image-container{
         min-width: 100%;
-        /*padding: 0;
-        margin: 0;*/
     }
 }
 
@@ -251,10 +250,6 @@ body{
 
 .header-image{
     max-width: 100%;
-    /*width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;*/
 }
 
 @media (max-width: 37.5rem) {
@@ -280,7 +275,7 @@ body{
 
 @media (max-width: 37.5rem) {
     .success-card{
-        max-width: 65%;
+        max-width: 100%;
         min-height: 100vh;
         padding-top: 5.875rem;
         border-radius: 0;
@@ -331,6 +326,8 @@ body{
     cursor: pointer;
 }
 
-.dismiss-button:hover{
-    background-color: hsl(4, 100%, 67%);
+@media (max-width: 37.5rem) {
+    .dismiss-button{
+        padding: 1rem 0.75rem;
+    }
 }
